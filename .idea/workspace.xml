@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/callbacks/Callback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threads/JVAPIRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threads/JVAPIThreadManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/callbacks/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/threads/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/threads/TestCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/threads/TestRunnable.java" afterDir="false" />
+    <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="Added ThreadManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -98,7 +89,7 @@
       <workItem from="1671444378751" duration="690000" />
       <workItem from="1671445173485" duration="1045000" />
       <workItem from="1671446358075" duration="71000" />
-      <workItem from="1671455790721" duration="10683000" />
+      <workItem from="1671455790721" duration="10748000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671444517421</created>
@@ -107,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671444517422</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added ThreadManager">
+      <created>1671494438476</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671494438476</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +124,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Added ThreadManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ThreadManager" />
   </component>
 </project>
