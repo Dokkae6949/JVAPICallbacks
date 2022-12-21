@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/threads/JVAPIThreadManagerTest.java" afterDir="false" />
+    <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="Removed old tests">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/threads/JVAPIThreadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/threads/JVAPIThreadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/callbacks/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/threads/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/threads/TestCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/threads/TestRunnable.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,25 +38,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/kurisu/.gitclones/JVAPIHelpers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.16605839",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kurisu/.gitclones/JVAPIHelpers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16605839&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -70,7 +65,7 @@
       <recent name="threads" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JVAPIThreadManagerTest">
     <configuration name="JVAPIThreadManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jvapi-helpers" />
       <extension name="coverage">
@@ -134,7 +129,8 @@
       <workItem from="1671613200687" duration="1607000" />
       <workItem from="1671619462148" duration="624000" />
       <workItem from="1671628368393" duration="1156000" />
-      <workItem from="1671659184916" duration="626000" />
+      <workItem from="1671659184916" duration="1021000" />
+      <workItem from="1671660510415" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671444517421</created>
@@ -150,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671494438476</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed old tests">
+      <created>1671659850721</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671659850721</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added ThreadManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ThreadManager" />
+    <MESSAGE value="Removed old tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed old tests" />
   </component>
 </project>
