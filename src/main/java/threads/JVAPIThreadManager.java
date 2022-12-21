@@ -1,7 +1,6 @@
 package threads;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 public class JVAPIThreadManager {
     private Thread thread;
@@ -20,7 +19,7 @@ public class JVAPIThreadManager {
     }
 
 
-    public void start() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    public void start() throws IllegalAccessException {
         if (runnableOrigin == null) return;
         if (thread != null) stop();
         if (thread == null) {
@@ -28,7 +27,6 @@ public class JVAPIThreadManager {
             runnableActive.shouldStop = false;
             thread = new Thread(runnableActive);
         }
-
 
         thread.start();
     }
@@ -42,12 +40,16 @@ public class JVAPIThreadManager {
     }
 
 
-    private JVAPIRunnable cloneRunnable(JVAPIRunnable origin) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        Class<?> clazz = origin.getClass();
-        Constructor<?> ctor = clazz.getConstructor();
-        Object copy = ctor.newInstance();
-        JVAPIRunnable newRunnable = (JVAPIRunnable) copy;
-        newRunnable.setOnFinishCallbacks(origin.getOnFinishCallbacks());
-        return newRunnable;
+    private JVAPIRunnable cloneRunnable(JVAPIRunnable origin) throws IllegalAccessException {
+        try {
+            Class<?> clazz = origin.getClass();
+            Constructor<?> ctor = clazz.getConstructor();
+            Object copy = ctor.newInstance();
+            JVAPIRunnable newRunnable = (JVAPIRunnable) copy;
+            newRunnable.setOnFinishCallbacks(origin.getOnFinishCallbacks());
+            return newRunnable;
+        } catch (Exception e) {
+            throw new IllegalAccessException("Failed cloning JVAPIRunnable class");
+        }
     }
 }
