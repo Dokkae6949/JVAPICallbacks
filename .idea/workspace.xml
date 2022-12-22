@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="Fixed Logix error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/threads/JVAPIRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/threads/JVAPIRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/threads/JVAPIThreadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/threads/JVAPIThreadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,7 @@
       <workItem from="1671659184916" duration="1021000" />
       <workItem from="1671660510415" duration="717000" />
       <workItem from="1671662551795" duration="1827000" />
-      <workItem from="1671698659066" duration="6731000" />
+      <workItem from="1671698659066" duration="6756000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671444517421</created>
@@ -197,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671706687289</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed Logix error">
+      <created>1671707015158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671707015158</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
