@@ -2,17 +2,20 @@ package threads;
 
 public class JVAPIThreadManager {
     private Thread thread;
-    private JVAPIRunnable runnableOrigin;
-    private JVAPIRunnable runnableActive;
+    private JVAPIRunnable<?> runnableOrigin;
+    private JVAPIRunnable<?> runnableActive;
 
 
-    public void setRunnable(JVAPIRunnable runnableOrigin) {
+    public JVAPIRunnable<?> getRunnable() {
+        return runnableOrigin;
+    }
+    public void setRunnable(JVAPIRunnable<?> runnableOrigin) {
         this.runnableOrigin = runnableOrigin;
     }
 
 
     public JVAPIThreadManager() {}
-    public JVAPIThreadManager(JVAPIRunnable runnable) {
+    public JVAPIThreadManager(JVAPIRunnable<?> runnable) {
         this.runnableOrigin = runnable;
     }
 

@@ -14,22 +14,18 @@ public abstract class JVAPIRunnable<T> implements Runnable, Cloneable {
     public synchronized List<Callback<T>> getCallbacks() {
         return callbacks;
     }
-    public synchronized JVAPIRunnable<T> setCallbacks(List<Callback<T>> callbacks) {
+    public synchronized void setCallbacks(List<Callback<T>> callbacks) {
         this.callbacks = callbacks;
-        return this;
     }
-    public synchronized JVAPIRunnable<T> setCallback(Callback<T> onSuccessCallback) {
+    public synchronized void setCallback(Callback<T> onSuccessCallback) {
         this.callbacks = new ArrayList<>();
         this.callbacks.add(onSuccessCallback);
-        return this;
     }
-    public synchronized JVAPIRunnable<T> addCallback(Callback<T> onSuccessCallback) {
+    public synchronized void addCallback(Callback<T> onSuccessCallback) {
         this.callbacks.add(onSuccessCallback);
-        return this;
     }
-    public synchronized JVAPIRunnable<T> addCallbacks(List<Callback<T>> onSuccessCallbacks) {
+    public synchronized void addCallbacks(List<Callback<T>> onSuccessCallbacks) {
         this.callbacks.addAll(onSuccessCallbacks);
-        return this;
     }
 
 
@@ -50,9 +46,7 @@ public abstract class JVAPIRunnable<T> implements Runnable, Cloneable {
     }
 
     @Override
-    public void run() {
-        fireOnSuccessCallbacks(null);
-    }
+    public void run() { }
 
 
     protected synchronized void fireOnSuccessCallbacks(T value) {
