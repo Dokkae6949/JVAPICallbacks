@@ -1,7 +1,7 @@
 package threads;
 
 import org.junit.jupiter.api.Test;
-import threads.runnable.TestRunnable;
+import threads.runnable.TestRunnableWithConstructor;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -30,7 +30,7 @@ class JVAPIThreadManagerTest {
     public void simpleRunnableTest() {
         assertDoesNotThrow(() -> {
             JVAPIThreadManager tManager = new JVAPIThreadManager();
-            tManager.setRunnable(new TestRunnable());
+            tManager.setRunnable(new TestRunnableWithConstructor(1707));
 
             tManager.stop();
             tManager.start();

@@ -1,5 +1,6 @@
 package callbacks;
 
 public interface Callback {
-    void onFire();
+    void onSuccess();
+    void onFailure();
 }
