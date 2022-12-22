@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="Removed old tests">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="Moved to JDK11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/threads/JVAPIRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/threads/JVAPIRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/threads/JVAPIThreadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/threads/JVAPIThreadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/threads/JVAPIThreadManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/threads/JVAPIThreadManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,7 +71,7 @@
       <module name="jvapi-helpers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threads.*" />
+          <option name="PATTERN" value="threads.runnable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,7 +131,9 @@
       <workItem from="1671619462148" duration="624000" />
       <workItem from="1671628368393" duration="1156000" />
       <workItem from="1671659184916" duration="1021000" />
-      <workItem from="1671660510415" duration="67000" />
+      <workItem from="1671660510415" duration="717000" />
+      <workItem from="1671662551795" duration="1827000" />
+      <workItem from="1671698659066" duration="1256000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671444517421</created>
@@ -153,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671659850721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Moved to JDK11">
+      <created>1671660588926</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671660588926</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +184,18 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added ThreadManager" />
     <MESSAGE value="Removed old tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed old tests" />
+    <MESSAGE value="Moved to JDK11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved to JDK11" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/threads/JVAPIThreadManager.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

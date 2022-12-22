@@ -36,12 +36,6 @@ public abstract class JVAPIRunnable implements Runnable {
     public JVAPIRunnable() {
         this.onFinishCallbacks = new ArrayList<>();
     }
-    public JVAPIRunnable(List<Callback> onFinishCallbacks) {
-        this.onFinishCallbacks = onFinishCallbacks;
-    }
-    public JVAPIRunnable(JVAPIRunnable runnable) {
-        this.onFinishCallbacks = runnable.getOnFinishCallbacks();
-    }
 
 
     @Override
