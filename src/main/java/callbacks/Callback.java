@@ -1,6 +1,6 @@
 package callbacks;
 
-public interface Callback {
-    void onSuccess();
-    void onFailure();
+public interface Callback<T> {
+    void onSuccess(T value);
+    void onFailure(T value);
 }

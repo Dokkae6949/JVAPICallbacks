@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="Added onFailure callback">
+    <list default="true" id="39d72b7c-aed3-4c00-a64b-ca04198241fd" name="Changes" comment="Updated version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/callbacks/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/callbacks/Callback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/threads/JVAPIRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/threads/JVAPIRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/threads/runnable/TestRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/threads/runnable/TestRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/threads/runnable/TestRunnableWithConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/threads/runnable/TestRunnableWithConstructor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
       <recent name="threads" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JVAPIThreadManagerTest">
+  <component name="RunManager" selected="Maven.jvapi [clean,deploy]">
     <configuration name="JVAPIThreadManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jvapi-helpers" />
       <extension name="coverage">
@@ -131,7 +134,7 @@
       <workItem from="1671659184916" duration="1021000" />
       <workItem from="1671660510415" duration="717000" />
       <workItem from="1671662551795" duration="1827000" />
-      <workItem from="1671698659066" duration="3205000" />
+      <workItem from="1671698659066" duration="5035000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1671444517421</created>
@@ -175,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671701787679</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated version">
+      <created>1671701876004</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671701876004</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +209,7 @@
     <MESSAGE value="Moved to JDK11" />
     <MESSAGE value="?" />
     <MESSAGE value="Added onFailure callback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added onFailure callback" />
+    <MESSAGE value="Updated version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated version" />
   </component>
 </project>
