@@ -6,58 +6,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class JVAPIRunnable<T> implements Runnable, Cloneable {
-    private List<Callback<T>> onSuccessCallbacks;
-    private List<Callback<T>> onFailureCallbacks;
+    private List<Callback<T>> callbacks;
 
     protected volatile boolean shouldStop = false;
 
 
-    public synchronized List<Callback<T>> getOnSuccessCallbacks() {
-        return onSuccessCallbacks;
+    public synchronized List<Callback<T>> getCallbacks() {
+        return callbacks;
     }
-    public synchronized JVAPIRunnable<T> setOnSuccessCallbacks(List<Callback<T>> onSuccessCallbacks) {
-        this.onSuccessCallbacks = onSuccessCallbacks;
+    public synchronized JVAPIRunnable<T> setCallbacks(List<Callback<T>> callbacks) {
+        this.callbacks = callbacks;
         return this;
     }
-    public synchronized JVAPIRunnable<T> setOnSuccessCallback(Callback<T> onSuccessCallback) {
-        this.onSuccessCallbacks = new ArrayList<>();
-        this.onSuccessCallbacks.add(onSuccessCallback);
+    public synchronized JVAPIRunnable<T> setCallback(Callback<T> onSuccessCallback) {
+        this.callbacks = new ArrayList<>();
+        this.callbacks.add(onSuccessCallback);
         return this;
     }
-    public synchronized JVAPIRunnable<T> addOnSuccessCallback(Callback<T> onSuccessCallback) {
-        this.onSuccessCallbacks.add(onSuccessCallback);
+    public synchronized JVAPIRunnable<T> addCallback(Callback<T> onSuccessCallback) {
+        this.callbacks.add(onSuccessCallback);
         return this;
     }
-    public synchronized JVAPIRunnable<T> addOnSuccessCallbacks(List<Callback<T>> onSuccessCallbacks) {
-        this.onSuccessCallbacks.addAll(onSuccessCallbacks);
-        return this;
-    }
-
-    public synchronized List<Callback<T>> getOnFailureCallbacks() {
-        return onFailureCallbacks;
-    }
-    public synchronized JVAPIRunnable<T> setOnFailureCallbacks(List<Callback<T>> onFailureCallbacks) {
-        this.onFailureCallbacks = onFailureCallbacks;
-        return this;
-    }
-    public synchronized JVAPIRunnable<T> setOnFailureCallback(Callback<T> onFailureCallback) {
-        this.onFailureCallbacks = new ArrayList<>();
-        this.onFailureCallbacks.add(onFailureCallback);
-        return this;
-    }
-    public synchronized JVAPIRunnable<T> addOnFailureCallback(Callback<T> onFailureCallback) {
-        this.onFailureCallbacks.add(onFailureCallback);
-        return this;
-    }
-    public synchronized JVAPIRunnable<T> addOnFailureCallbacks(List<Callback<T>> onFailureCallbacks) {
-        this.onFailureCallbacks.addAll(onFailureCallbacks);
+    public synchronized JVAPIRunnable<T> addCallbacks(List<Callback<T>> onSuccessCallbacks) {
+        this.callbacks.addAll(onSuccessCallbacks);
         return this;
     }
 
 
     public JVAPIRunnable() {
-        this.onSuccessCallbacks = new ArrayList<>();
-        this.onFailureCallbacks = new ArrayList<>();
+        this.callbacks = new ArrayList<>();
     }
 
 
@@ -65,7 +42,7 @@ public abstract class JVAPIRunnable<T> implements Runnable, Cloneable {
     public JVAPIRunnable<T> clone() {
         try {
             JVAPIRunnable<T> clone = (JVAPIRunnable<T>) super.clone();
-            clone.setOnSuccessCallbacks(this.onSuccessCallbacks);
+            clone.setCallbacks(this.callbacks);
             return clone;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError("Failed cloning JVAPIRunnable");
@@ -79,10 +56,10 @@ public abstract class JVAPIRunnable<T> implements Runnable, Cloneable {
 
 
     protected synchronized void fireOnSuccessCallbacks(T value) {
-        for (Callback<T> callback : onSuccessCallbacks) callback.onSuccess(value);
+        for (Callback<T> callback : callbacks) callback.onSuccess(value);
     }
 
     protected synchronized void fireOnFailureCallbacks(T value) {
-        for (Callback<T> callback : onFailureCallbacks) callback.onFailure(value);
+        for (Callback<T> callback : callbacks) callback.onFailure(value);
     }
 }
